@@ -3,6 +3,7 @@ package main
 import (
 	"log/slog"
 
+	"github.com/Atharv3221/Personal-Diary/operations"
 	"github.com/Atharv3221/Personal-Diary/password"
 )
 
@@ -11,8 +12,7 @@ func main() {
 	slog.Info("Starting Password Manager")
 	password.CheckConfig()
 
-	// GUI will add later
-
+	// start operations
 	slog.Info("Staring Operations")
-
+	operations.Operations()
 }
